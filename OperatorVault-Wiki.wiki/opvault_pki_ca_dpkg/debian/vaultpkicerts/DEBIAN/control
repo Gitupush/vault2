@@ -1,0 +1,7 @@
+Package: vaultpkicerts
+Version: 1.0-1
+Section: base
+Priority: optional
+Architecture: all
+Maintainer: IBM
+Description: Installs global public PKI certificates for Vault

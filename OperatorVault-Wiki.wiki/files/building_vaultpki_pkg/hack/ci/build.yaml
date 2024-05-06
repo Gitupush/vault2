@@ -1,0 +1,44 @@
+---
+platform: linux
+
+params:
+  ARTIFACTORY_GENERIC_REPO_PATH:
+  ARTIFACTORY_HOST:
+  ARTIFACTORY_ACCESS_TOKEN: ((wcp-genctl-docker-local-artifactory-password))
+  ARTIFACTORY_PACKAGE_SUBDIR:  
+  PACKAGE_PREFIX:
+  GIT_PRIVATE_KEY: ((ghe-private-key))
+
+inputs:
+  - name: workspace-repo
+  - name: genctl-ci-repo
+
+run:
+  path: /bin/bash
+  args:
+  - -euc
+  - |
+
+    export BUILD_ROOT="${PWD}"
+    # Script vairables
+    export ARTIFACTORY_PATH="https://${ARTIFACTORY_HOST}/artifactory"
+
+    # set up ssh agent
+    eval "$(ssh-agent -s)"
+    ssh-add - <<< "${GIT_PRIVATE_KEY}"
+    mkdir -p ~/.ssh
+    ssh-keyscan github.ibm.com >> ~/.ssh/known_hosts
+    
+    # Build the deb package
+    echo "Building deb package"
+    ./workspace-repo/vault_pki_certs/debian/build_pkg.sh
+
+    # Demonstrate deb package was built
+    find . -name *.deb
+    # Running the build script
+    cd build
+
+    # Upload deb packages to artifactory
+    echo "Pushing packages to remote..."
+    ${BUILD_ROOT}/genctl-ci-repo/scripts/push_deb_to_artifactory.sh "${ARTIFACTORY_PACKAGE_SUBDIR}" "${PACKAGE_PREFIX}"
+    echo "Build has completed successfully."

@@ -1,0 +1,7 @@
+If a raft node stays indefinitely in a state where the **Active Node Address** is _\<none>_, as shown in the picture below, compare the **Raft Committed Index** to the cluster's active node's **Raft Committed Index**.  
+
+![Isolated Vault Node's Status](../wiki/files/diagrams/Isolated_Vault_Raft_Node.png)  
+
+Sometimes due to network, dns or other reasons a vault node will become isolated from the rest of the cluster for too long and its index falls too far behind. When the index falls too far behind, the cluster's active node will reject the isolated node's request to rejoin the cluster. In the above example, the active vault node's **Raft Committed Index** was **9200895** - clearly farther ahead.  
+
+Vault's **storage path** is configured in `/etc/vault.d/storage.hcl` and by default is `/var/vault/raft`. This is where the raft database and related files are stored. To resolve the isolation problem, stop the vault service, then delete everything in the `/var/vault/raft` directory except for the `node-id` file. The `node-id` file is stored in the rest of the vault cluster's node and, therefore, simplifies restoring an isolated node into its cluster. Only with the direction of Hashicorp support should the file `/var/vault/raft/node-id` also be removed.

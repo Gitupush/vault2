@@ -1,0 +1,70 @@
+<mxfile host="Electron" modified="2024-03-11T15:44:28.350Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.8 Chrome/112.0.5615.165 Electron/24.2.0 Safari/537.36" etag="LjOaG1id1ZBJ3NvAJPHv" version="21.2.8" type="device">
+  <diagram name="Page-1" id="MDxAw-oNKGZ40Wkf6vaY">
+    <mxGraphModel dx="1401" dy="1154" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="IxAwCNW4t3QejC4aEVo8-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="IxAwCNW4t3QejC4aEVo8-1" target="IxAwCNW4t3QejC4aEVo8-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IxAwCNW4t3QejC4aEVo8-1" value="Vault Root PKI" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IxAwCNW4t3QejC4aEVo8-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="IxAwCNW4t3QejC4aEVo8-2" target="IxAwCNW4t3QejC4aEVo8-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IxAwCNW4t3QejC4aEVo8-2" value="generates new root" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IxAwCNW4t3QejC4aEVo8-4" value="executes distribution process" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IxAwCNW4t3QejC4aEVo8-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.001;entryY=0.622;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="IxAwCNW4t3QejC4aEVo8-13" target="IxAwCNW4t3QejC4aEVo8-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IxAwCNW4t3QejC4aEVo8-27" value="&amp;nbsp;How much work?&amp;nbsp;&lt;br&gt;1 or 2 weeks?&lt;br&gt;@spencer" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="IxAwCNW4t3QejC4aEVo8-25">
+          <mxGeometry x="-0.2242" y="-2" relative="1" as="geometry">
+            <mxPoint x="10" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IxAwCNW4t3QejC4aEVo8-13" value="Root CA published to Github Wiki repo" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="325" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IxAwCNW4t3QejC4aEVo8-14" value="&lt;font style=&quot;font-size: 26px;&quot;&gt;Baremetal /k8s&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="270" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IxAwCNW4t3QejC4aEVo8-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="IxAwCNW4t3QejC4aEVo8-16" target="IxAwCNW4t3QejC4aEVo8-18">
+          <mxGeometry x="-0.0038" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IxAwCNW4t3QejC4aEVo8-16" value="Pipeline publishes info to Artifactory" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="322" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IxAwCNW4t3QejC4aEVo8-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="IxAwCNW4t3QejC4aEVo8-18" target="IxAwCNW4t3QejC4aEVo8-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IxAwCNW4t3QejC4aEVo8-18" value="Ubuntu image rebuilt to include Root CA" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="320" width="120" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="IxAwCNW4t3QejC4aEVo8-20" value="Containers pushed via Razee" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="771" y="323" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IxAwCNW4t3QejC4aEVo8-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="IxAwCNW4t3QejC4aEVo8-28" target="IxAwCNW4t3QejC4aEVo8-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IxAwCNW4t3QejC4aEVo8-30" value="&amp;nbsp;FUTURE&amp;nbsp;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="IxAwCNW4t3QejC4aEVo8-29">
+          <mxGeometry x="0.064" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IxAwCNW4t3QejC4aEVo8-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="IxAwCNW4t3QejC4aEVo8-28" target="IxAwCNW4t3QejC4aEVo8-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IxAwCNW4t3QejC4aEVo8-28" value="Scratch/Ubuntu image rebuilt to include Root CA" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="430" width="120" height="65" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

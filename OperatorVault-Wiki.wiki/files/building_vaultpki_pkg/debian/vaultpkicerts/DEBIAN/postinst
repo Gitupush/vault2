@@ -1,0 +1,14 @@
+#!/bin/sh
+ 
+# Exit on error
+set -e
+ 
+# Add permission to ca-certificates.
+chown root:root /usr/local/share/ca-certificates/*
+chmod 400  /usr/local/share/ca-certificates/*
+
+# Update newly added ca certifcates
+update-ca-certificates
+
+
+echo "Vault PKI CA Certificates updated successfully"

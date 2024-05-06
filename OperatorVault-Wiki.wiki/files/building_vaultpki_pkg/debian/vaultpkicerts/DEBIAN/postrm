@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# Exit on error
+set -e
+
+echo "Inside post remove script"
+
+# Update removed ca certifcates
+update-ca-certificates
+
+echo "Current installed Vault PKI CA Certificates removed successfully"
